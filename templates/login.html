@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Login</h1>
+
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+        <input type="submit" value="Log In">
+    </form>
+
+    <!-- Add a link to the registration page -->
+    <p>Don't have an account? <a href="/register">Register here</a></p>
+</body>
+</html>
