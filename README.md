@@ -57,4 +57,4 @@ If you'd like to contribute to this project, please follow these steps:
 
 ## Author
 - Siddhant Srivastava
-- Email: emailto:(srivastavasiddhant32@gmail.com)
+- Email: mailto:(srivastavasiddhant32@gmail.com)
