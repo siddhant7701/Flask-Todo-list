@@ -3,48 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task Management System</title>
+    <title>Login</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
 </head>
 <body>
-    <h1>Task Management System</h1>
-    
-    <!-- Navbar with username and logout button -->
-    <div class="navbar">
-        {% if 'username' in session %}
-        <div class="user-circle">{{ session['username'][0] }}</div>
-        <span class="username">{{ session['username'] }}</span>
-        <a href="/logout" class="logout">Logout</a>
-        {% endif %}
-    </div>
-    
+    <h1>Login</h1>
 
-    <form action="/add_task" method="POST">
-        <h2>Add Task</h2>
-        <label for="task_name">Task Name:</label>
-        <input type="text" name="task_name" required><br>
-        <label for="task_description">Task Description:</label>
-        <input type="text" name="task_description" required><br>
-        <input type="submit" value="Add Task">
+    <form action="/login" method="POST" class="login">
+        <label for="username">Username:</label>
+        <input type="text" name="username" required><br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" required><br>
+        <input type="submit" value="Log In">
     </form>
 
-    <form action="/mark_completed" method="POST">
-        <h2>Tasks</h2>
-        <ul>
-            {% for task in tasks %}
-            <li>
-                <input type="checkbox" name="task_name" value="{{ task.name }}" {% if task.completed %}checked{% endif %}>
-                {{ task.name }} - {{ task.description }} ({{ "Completed" if task.completed else "Not Completed" }})
-                {% if not task.completed %}
-                <form action="/mark_completed" method="POST">
-                    <input type="hidden" name="task_name" value="{{ task.name }}">
-                    <input type="submit" value="Mark Completed">
-                </form>
-                {% endif %}
-            </li>
-            {% endfor %}
-        </ul>
-        <input type="submit" value="Mark Completed">
-    </form>
+    <!-- Add a link to the registration page -->
+    <p>Don't have an account? <a href="/register">Register here</a></p>
 </body>
 </html>
