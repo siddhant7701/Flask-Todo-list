@@ -25,7 +25,19 @@ form {
     border-radius: 5px;
     padding: 20px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
 }
 
 label {
@@ -33,9 +45,165 @@ label {
     margin-bottom: 5px;
 }
 
+
+/* Login Form Styles */
+
+.login {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.login h1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.login label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login input[type="text"],
+.login input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Register Form Styles */
+
+.register {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.register h1 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.register label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.register input[type="text"],
+.register input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.register input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+/* Tasks Form Styles */
+
+.tasks {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.tasks h2 {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.tasks label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tasks input[type="text"],
+.tasks input[type="password"] {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.tasks input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.tasks input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
 input[type="text"],
 input[type="password"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
