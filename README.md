@@ -56,5 +56,5 @@ If you'd like to contribute to this project, please follow these steps:
 5. Create a pull request to merge your changes into the main repository.
 
 ## Author
-- Siddhant Srivastava
-- Email: mailto:(srivastavasiddhant32@gmail.com)
+- Name: Siddhant Srivastava
+- Email: srivastavasiddhant32@gmail.com
